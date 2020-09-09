@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header-content {
+    text-align: center;
+    
+  }
+
+  .header-content img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 420px;
+    object-fit: cover;
+
+    animation: backInDown; 
+    animation-duration: 1s;
+    
+  }
+
+
+  .Contacto{
+    margin-top: 30px;
+    background-color: rgb(109, 132, 178);
+    color: #fff;
+    text-align: center;
+    
+}
+
+  .title{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+
+    animation: backInUp; 
+    animation-duration: 2s;
+  }
+
+  .grid-3 {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
+    grid-gap: 20px;
+    text-align: center;
+  }
+
+.direccion{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+
+    animation: backInUp; 
+    animation-duration: 2s;
+}
+
+.texto-gen{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.footer{
+    margin-top: 0px;
+    color: rgb(54, 54, 54);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+    .header::after {
+      height: 50vh;
+    }
+    
+    .header-content {
+      top: 5%;
+      margin-top: 5px;
+    }
+
+    .header-content img {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+        height: 120px;
+        object-fit: cover;
+        
+      }
+
+    .Contacto{
+        margin-top: 15px;
+        background-color: rgb(109, 132, 178);
+        color: #fff;
+        text-align: center;
+        
+    }
+
+    .title{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+      }
+    
+      .grid-3 {
+        
+        display: grid;
+        grid-template-columns: 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
+        grid-gap: 20px;
+        text-align: center;
+      }
+    
+    .direccion{
+        margin-top: 30px;
+        color: #fff;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .texto-gen{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    
+    .footer{
+        margin-top: 0px;
+        color: rgb(54, 54, 54);
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+} 
